@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Miltonian&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,700&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(_image/mario-fundo.jpg);
+}
+
+:root {
+    --Branco: #ffffff;
+    --Transparente: #00000033;
+    --Preto: #000000;
+    --Pretotransparente: #00000014;
+    --Laranja: #ff8400;
+    --AzulTransparente: #009dff5c;
+    --Azul: #009dff;
+    --Cinza: #dbdae9;
+}
+
+::-webkit-input-placeholder {
+    color: var(--Branco);
+}
+
+#header_home {
+    text-align: center;
+    align-items: center;
+    padding: 40px;
+    background-color: var(--AzulTransparente);
+    border: solid 0.1px var(--Pretotransparente);
+    font-size: 30px;
+    font-family: 'Miltonian', cursive;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 8px;
+    background-color: var(--AzulTransparente);
+    border: solid 0.1px var(--Pretotransparente);
+}
+
+.navbar_nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    list-style-type: none;
+}
+
+.nav_item {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 8px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Para ser usado individual fora da outra div*/
+
+/*.search_div {
+    padding: 15px;
+    margin: 0;
+    background-color: var(--AzulTransparente);
+}*/
+.search_text {
+    margin: auto;
+    background: var(--Laranja);
+    padding: 10px;
+    height: 25px;
+    width: 23em;
+    border: 1px solid var(--Preto);
+    border-radius: 50px;
+}
+
+.search_box {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    font-size: 1.2em;
+    width: 18em;
+    color: var(--Preto);
+    font-family: 'Miltonian', cursive;
+}
+
+#link_download {
+    display: flex;
+    flex-direction: wrap;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.jogos_list {
+    -webkit-backdrop-filter: blur(18px);
+    backdrop-filter: blur(18px);
+    border-radius: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 0.1px solid;
+    background-color: var(--Transparente);
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.rg-box {
+    display: flex;
+    width: 6rem;
+    height: auto 0;
+    border: 1px solid;
+    border-radius: 15%;
+    padding: 10px;
+    margin: 8px;
+    background-color: var(--Cinza);
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+.download-link {
+    width: 6rem;
+    border: 1px solid;
+    border-radius: 15%;
+    padding: 10px;
+    margin: 5px;
+    background-color: var(--Cinza);
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+.rg-box a {
+    color: var(--Preto);
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+.rg-box:hover {
+    background-color: rgba(0, 242, 255, 0.551);
+}
+
+footer {
+    margin: 0%;
+    padding: 0%;
+}
+
+.rodape {
+    position: absolute;
+    width: 96%;
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--Branco);
+    background-color: #00000086;
+    margin: 0%;
+    padding: 2%;
+    border-radius: 1%;
+}
+
+#linha {
+    border: var(--Preto) 0.1px solid;
+    background-color: var(--Preto);
+}
+
+#sobre {
+    border: 1px solid;
+    background-color: #00000086;
+    color: var(--Branco);
+    font-size: 1.2rem;
+}
+
+#email,
+#email1 {
+    font-size: 1.2rem;
+    width: 35rem;
+    border-radius: 5px;
+    color: var(--Laranja);
+    text-align: center;
+}
+
+#email:hover,
+#email1:hover {
+    color: var(--Azul);
+}
+
+.center {
+    width: 80%;
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 8px;
+    background-color: #ffffffdb;
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--Preto);
+}
+
+.all-games {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 8px;
+    background-color: #ffffffdb;
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--Preto);
+}
+
+.allgames {
+    flex-direction: column;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.allgames a {
+    color: var(--Laranja);
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.allgames a:hover {
+    color: var(--Azul);
+}
+
+.social-icons .social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: #495057;
+    color: #fff;
+    border-radius: 100%;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+    margin: 8px;
+}
+
+.social-icons .social-icon:last-child {
+    margin-right: 0;
+}
+
+.social-icons .social-icon:hover {
+    background-color: var(--Laranja);
+}
+
+button {
+    text-align: center;
+    background-color: #495057;
+    border: 1px solid var(--Preto);
+    border-radius: 5px;
+    font-size: 1.6em;
+    width: auto;
+    height: auto;
+    font-family: 'Miltonian', cursive;
+}
+
+button:hover,
+button a:hover {
+    background-color: var(--Branco);
+    color: #495057;
+}
+
+button a {
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--Branco);
+}
+
+#button {
+    margin: 10px;
+    text-align: center;
+}
+
+#inBox li {
+    margin: 10%;
+    padding: 6%;
+    border: 1px solid;
+    border-color: var(--Azul);
+    border-radius: 10px;
+    background-color: rgb(15, 95, 216);
+    background-color: (-webkit-backdrop-filter);
+}
+
+#inBox li:hover {
+    background-color: rgb(255, 255, 255);
+    transition: .6s;
+}
