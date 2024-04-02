@@ -60,13 +60,6 @@ body {
     align-items: center;
 }
 
-/* Para ser usado individual fora da outra div*/
-
-/*.search_div {
-    padding: 15px;
-    margin: 0;
-    background-color: var(--AzulTransparente);
-}*/
 .search_text {
     margin: auto;
     background: var(--Laranja);
@@ -295,4 +288,40 @@ button a {
 #inBox li:hover {
     background-color: rgb(255, 255, 255);
     transition: .6s;
+}
+
+@media (max-width: 768px) {
+
+.rg-box:hover {
+    background-color: rgba(0, 242, 255, 0.551);
+}
+
+.rg-box img {
+    width: 98%;
+}
+
+.rg-box a {
+    color: var(--Preto);
+    font-family: 'Josefin Slab', serif;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+.rg-box {
+    display: flex;
+    width: 5rem;
+    height: auto 0;
+    border: 1px solid;
+    border-radius: 15%;
+    padding: 10px;
+    margin: 8px;
+    background-color: var(--Cinza);
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family: 'Josefin Slab', serif;
+
+}
+
 }
